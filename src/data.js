@@ -40,13 +40,13 @@ const MONTHS = makeMonths();
 const DEPARTMENTS = [
   { id: 'academic',    name: 'Academic Affairs',       budget: 1820000, head: 'Dr. Bilkes' },
   { id: 'faculty',     name: 'Faculty & Instruction',  budget: 2640000, head: 'Dr. Beeke' },
-  { id: 'library',     name: 'Hekman Library',         budget:  420000, head: 'M. VanderMeer' },
-  { id: 'student',     name: 'Student Life',           budget:  295000, head: 'P. Tuininga' },
-  { id: 'advancement', name: 'Advancement',            budget:  710000, head: 'K. Bartlema' },
-  { id: 'operations',  name: 'Operations & Facilities',budget: 1180000, head: 'J. Bilkes' },
-  { id: 'tech',        name: 'Information Technology', budget:  340000, head: 'A. DeJong' },
+  { id: 'library',     name: 'William Perkins Library',         budget:  420000, head: 'Laura Ladwig' },
+  { id: 'student',     name: 'Student Life',           budget:  295000, head: 'Isaac Bronkema' },
+  { id: 'advancement', name: 'Advancement',            budget:  710000, head: 'Karla Soule' },
+  { id: 'operations',  name: 'Operations & Facilities',budget: 1180000, head: 'Bill Thies' },
+  { id: 'tech',        name: 'Information Technology', budget:  340000, head: 'Seth Huckstead' },
   { id: 'admin',       name: 'Administration',         budget:  680000, head: 'Dr. Neele' },
-  { id: 'international', name: 'International Programs', budget: 540000, head: 'Dr. Macleod' },
+  { id: 'international', name: 'International Programs', budget: 540000, head: 'Jo DeBlois' },
 ];
 
 // Spending pattern: each dept has a baseline monthly burn + seasonal + noise + a
@@ -174,7 +174,7 @@ donations.avgGift        = MONTHS.map((mo, i) => Math.round((312 + i * 1.8) * (m
 
 // Top fundraisers (gift officers) — current year
 donations.fundraisers = [
-  { name: 'Karla Bartlema',  raised: 1_842_000, gifts: 412, avg: 4471, share: 0.41 },
+  { name: 'Karla Soule',  raised: 1_842_000, gifts: 412, avg: 4471, share: 0.41 },
   { name: 'Mark Kelderman',  raised:   918_400, gifts: 287, avg: 3199, share: 0.20 },
   { name: 'Ruth VanGroningen', raised: 624_000, gifts: 196, avg: 3184, share: 0.14 },
   { name: 'Dr. Joel Beeke',   raised:   486_200, gifts:  82, avg: 5929, share: 0.11 },
@@ -195,16 +195,16 @@ donations.byCountry = [
 
 // Recent gifts (last 30 days, sampled)
 donations.recentGifts = [
-  { date: 'May 12', donor: 'Anonymous',                   fund: 'Scholarship Fund',        fundraiser: 'Karla Bartlema',    amount: 50000 },
+  { date: 'May 12', donor: 'Anonymous',                   fund: 'Scholarship Fund',        fundraiser: 'Karla Soule',    amount: 50000 },
   { date: 'May 11', donor: 'Reformed Trust Foundation',   fund: 'Endowed Chairs',          fundraiser: 'Dr. Joel Beeke',    amount: 25000 },
-  { date: 'May 10', donor: 'J. & M. VanderHart',          fund: 'Unrestricted Annual',     fundraiser: 'Karla Bartlema',    amount:  5000 },
+  { date: 'May 10', donor: 'J. & M. VanderHart',          fund: 'Unrestricted Annual',     fundraiser: 'Karla Soule',    amount:  5000 },
   { date: 'May 09', donor: 'Heritage Reformed Cong.',     fund: 'International Students',  fundraiser: 'Mark Kelderman',    amount:  8400 },
   { date: 'May 08', donor: 'P. Veldkamp',                 fund: 'Library Acquisitions',    fundraiser: 'House file',        amount:   500 },
   { date: 'May 08', donor: 'Anonymous (planned)',         fund: 'Endowed Chairs',          fundraiser: 'Dr. Joel Beeke',    amount: 100000 },
   { date: 'May 07', donor: 'Free Church of Scotland',     fund: 'International Students',  fundraiser: 'Ruth VanGroningen', amount: 12000 },
-  { date: 'May 06', donor: 'D. Hofstra',                  fund: 'Capital — Hekman Wing',   fundraiser: 'Karla Bartlema',    amount: 15000 },
+  { date: 'May 06', donor: 'D. Hofstra',                  fund: 'Capital — Hekman Wing',   fundraiser: 'Karla Soule',    amount: 15000 },
   { date: 'May 05', donor: 'Anonymous',                   fund: 'Unrestricted Annual',     fundraiser: 'House file',        amount:   250 },
-  { date: 'May 04', donor: 'W. & E. Beeke',               fund: 'Scholarship Fund',        fundraiser: 'Karla Bartlema',    amount:  3500 },
+  { date: 'May 04', donor: 'W. & E. Beeke',               fund: 'Scholarship Fund',        fundraiser: 'Karla Soule',    amount:  3500 },
 ];
 
 // ───────────────────────────────────────────────────────────────────────
@@ -322,9 +322,9 @@ academic.totalCourses = academic.partners.reduce((s, p) => s + p.courses, 0);
 academic.topCourses = [
   { code: 'ST-501', title: 'Systematic Theology I',          enrolled: 42, cap: 50, instructor: 'Dr. Beeke' },
   { code: 'OT-602', title: 'Hebrew Exegesis: Pentateuch',    enrolled: 18, cap: 24, instructor: 'Dr. Bilkes' },
-  { code: 'CH-401', title: 'Reformation Church History',     enrolled: 36, cap: 45, instructor: 'Dr. Murray' },
+  { code: 'CH-401', title: 'Reformation Church History',     enrolled: 36, cap: 45, instructor: 'Dr. Kuivenhoven' },
   { code: 'PT-510', title: 'Reformed Homiletics',            enrolled: 28, cap: 32, instructor: 'Dr. Neele' },
-  { code: 'NT-603', title: 'Greek Exegesis: Pauline Epistles', enrolled: 21, cap: 24, instructor: 'Dr. Smith' },
+  { code: 'NT-603', title: 'Greek Exegesis: Pauline Epistles', enrolled: 21, cap: 24, instructor: 'Dr. Bilkes' },
   { code: 'ST-704', title: 'Puritan Theology Seminar',       enrolled: 14, cap: 18, instructor: 'Dr. Beeke' },
 ];
 
