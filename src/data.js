@@ -249,7 +249,6 @@ hr.openPositions = [
   { title: 'Director of Spiritual Formation',       dept: 'Student Life',  posted: '2026-03-22', stage: 'Final interviews',     candidates: 3 },
   { title: 'Annual Fund Officer',                   dept: 'Advancement',   posted: '2026-04-08', stage: 'Screening',            candidates: 14 },
   { title: 'Cataloging Librarian (PT)',             dept: 'Library',       posted: '2026-04-19', stage: 'Posted',               candidates: 5 },
-  { title: 'Network Administrator',                 dept: 'IT',            posted: '2026-01-30', stage: 'Re-opening — declined offer', candidates: 0 },
 ];
 
 // Tenure / retention pulse
