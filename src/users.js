@@ -12,9 +12,9 @@ window.PRTS_USERS = {
     short: 'Dr. Neele',
     // Today's agenda — would come from Outlook/Google Cal in production
     agenda: [
-      { time: '09:00', label: 'Senior staff stand-up',     detail: 'Weekly · Beeke conference room' },
-      { time: '10:30', label: 'Faculty council',           detail: 'Standing item: SIS migration' },
-      { time: '13:00', label: 'Lunch w/ K. Bartlema',      detail: 'Advancement · Q3 outlook' },
+      { time: '09:00', label: 'Meeting w/ Dr. Bilkes',     detail: 'Board Room' },
+      { time: '10:30', label: 'Faculty Meeting',           detail: 'End of Year' },
+      { time: '13:00', label: 'Lunch w/ Karla Soule',      detail: 'Advancement · Q3 outlook' },
       { time: '15:00', label: 'Donor call (NL cohort)',    detail: 'Heritage Reformed delegation' },
       { time: '17:00', label: 'Sermon prep',               detail: 'Sunday text: Psalm 119:130' },
     ],
@@ -29,10 +29,10 @@ window.PRTS_USERS = {
     title: 'Vice President',
     short: 'Dr. Bilkes',
     agenda: [
-      { time: '08:30', label: 'OT-602 Hebrew Exegesis',    detail: 'Pentateuch · Lecture, room 204' },
-      { time: '11:00', label: 'Dissertation defense',      detail: 'PhD candidate: J. Vermeer' },
+      { time: '08:30', label: 'OT-602 Hebrew Exegesis',    detail: 'Pentateuch · Lecture, room 118' },
+      { time: '11:00', label: 'Dissertation defense',      detail: 'PhD candidate: ' },
       { time: '13:30', label: 'Curriculum committee',      detail: 'MDiv core sequence review' },
-      { time: '15:00', label: '1:1 with Dr. Murray',       detail: 'Reformation history syllabus' },
+      { time: '15:00', label: '1:1 with Dr. Kuivenhoven',       detail: 'Reformation history syllabus' },
       { time: '16:30', label: 'Admissions review',         detail: 'Fall \u201926 ThM file 7 of 12' },
     ],
     // Bilkes cares about academic, faculty, enrollment
